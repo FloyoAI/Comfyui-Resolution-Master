@@ -15,6 +15,8 @@ import { drawingMethods } from "./drawing/resolution_master_draw_methods.js";
 import { interactionMethods } from "./interaction/resolution_master_interaction_methods.js";
 import { nodeLifecycleMethods } from "./node/resolution_master_node_lifecycle.js";
 import { canvasMethods } from "./canvas/resolution_master_canvas_methods.js";
+// Floyo: Vue-nodes rendering compatibility (additive; no-op in classic canvas mode).
+import "./floyo_vue_compat.js";
 const log = createModuleLogger('resolution_master');
 
 class ResolutionMasterCanvas {    
